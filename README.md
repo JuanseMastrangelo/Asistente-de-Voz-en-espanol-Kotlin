@@ -14,5 +14,5 @@ Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo pue
 * WebService (proximamente)
 
 - - -
-![picture alt](https://www.giztab.com/wp-content/uploads/2018/07/robot-enfermeros.png "Asistente de voz")
+![picture alt](https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg "Asistente de voz")
 
