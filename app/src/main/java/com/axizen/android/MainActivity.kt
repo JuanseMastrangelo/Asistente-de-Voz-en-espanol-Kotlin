@@ -221,11 +221,6 @@ class MainActivity : AppCompatActivity(), RecognitionCallback {
         // SPLIT PRINCIPAL PARA SABER LA ACCION =>> CORTAMOS accion[0] QUE NOS DIRÁ QUE HACER
         val accion = s.split(" ")
 
-        // *********************************************** ||
-        //  -> ALGORITMO REPRODUCCIR CANCION DE SPOTIFY    ||
-        // *********************************************** ||
-            // REPRODUCIR 'sed' DE 'callejeros'    =>> SPLIT para saber el nombre de la canción
-            val cancionYartista = s.split(" artista ")
 
 
 
@@ -233,23 +228,39 @@ class MainActivity : AppCompatActivity(), RecognitionCallback {
             //  -> ALGORITMO PRINCIPAL INTERNO    ||
             // ********************************** ||
             if(accion[0].equals("reproducir")){ // ALGORITMO INTERIOR DE ACCION 'REPRODUCIR'
-                val nombreCancionEnviada = cancionYartista[0].replace("reproducir ","") // Tomamos el nombre de la cancion
-                val respuesta = verificarExistenciaCancion(nombreCancionEnviada, cancionYartista[1])
 
-                // Validamos si existe la cancion
-                if(respuesta != "Error"){
-                    // EXISTE! var uri = "spotify:track:231GRlgtbKSCjzFixplhAv"
-                    var uri = "spotify:track:"+respuesta
-                    val launcher = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
-                    startActivity(launcher)
-                    stopRecognition()
+                // *********************************************** ||
+                //  -> ALGORITMO REPRODUCCIR CANCION DE SPOTIFY    ||
+                // *********************************************** ||
+
+                // REPRODUCIR 'sed' DE 'callejeros'    =>> SPLIT para saber el nombre de la canción
+                val cancionYartista = s.split(" del artista ")
+
+                if(cancionYartista.isEmpty()){
+                    // Si envia una canción
+                    val nombreCancionEnviada = cancionYartista[0].replace("reproducir ","") // Tomamos el nombre de la cancion
+                    val respuesta = verificarExistenciaCancion(nombreCancionEnviada, cancionYartista[1])
+
+                    // Validamos si existe la cancion
+                    if(respuesta != "Error"){
+                        // EXISTE! var uri = "spotify:track:231GRlgtbKSCjzFixplhAv"
+                        var uri = "spotify:track:"+respuesta
+                        val launcher = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+                        startActivity(launcher)
+                        stopRecognition()
+                    }else{
+                        Snackbar.make(
+                            mainActivityLayout, // view / layout
+                            "La cancion no existe",
+                            Snackbar.LENGTH_SHORT
+                        ).show()
+                    }
                 }else{
-                    Snackbar.make(
-                        mainActivityLayout, // view / layout
-                        "La cancion no existe",
-                        Snackbar.LENGTH_SHORT
-                    ).show()
+                    // Si no envia canción (solo dice reproducir) entonces
+                    ReproducirVoz("Un ejemplo de este comando es: reproducir sed del artista callejeros")
+
                 }
+
 
             }else if(accion[0].equals("canciones")){
                 MostrarCancion()
