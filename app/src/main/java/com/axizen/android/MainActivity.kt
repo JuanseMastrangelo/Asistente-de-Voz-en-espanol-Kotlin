@@ -257,7 +257,16 @@ class MainActivity : AppCompatActivity(), RecognitionCallback {
                     }
                 }else{
                     // Si no envia canción (solo dice reproducir) entonces
-                    ReproducirVoz("Un ejemplo de este comando es: reproducir sed del artista callejeros")
+                    Snackbar.make(
+                        mainActivityLayout, // view / layout
+                        "Error: no se ha pasado ninguna canción",
+                        Snackbar.LENGTH_SHORT
+                    ).show()
+                    Snackbar.make(
+                        mainActivityLayout, // view / layout
+                        "Dí: reproducir <cancion> del artista <artista>",
+                        Snackbar.LENGTH_SHORT
+                    ).show()
 
                 }
 
@@ -273,9 +282,7 @@ class MainActivity : AppCompatActivity(), RecognitionCallback {
         if(cursor.getCount() > 0) {
 
             while(cursor.moveToNext()){
-                Toast.makeText(this, cursor.getString(cursor.getColumnIndex(ConexionSpotify.COLUMN_TRACK)), Toast.LENGTH_SHORT).show()
-                Toast.makeText(this, cursor.getString(cursor.getColumnIndex(ConexionSpotify.COLUMN_ARTISTA)), Toast.LENGTH_SHORT).show()
-                Toast.makeText(this, cursor.getString(cursor.getColumnIndex(ConexionSpotify.COLUMN_NOMBRE)), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, cursor.getString(cursor.getColumnIndex(ConexionSpotify.COLUMN_NOMBRE))+" - "+cursor.getString(cursor.getColumnIndex(ConexionSpotify.COLUMN_ARTISTA)), Toast.LENGTH_SHORT).show()
             }
 
         }else{
