@@ -1,6 +1,7 @@
+![picture alt](https://www.giztab.com/wp-content/uploads/2018/07/robot-enfermeros.png "Asistente de voz")]
 
 # Projecto ASISTENTE DE VOZ :speak_no_evil:
-Asistente para tu celular con la opción de reconocer una palabra. Esto lo hace mediante el speech de Google.
+Asistente de voz con la opción de reconocer una palabra. Esto lo hace mediante el speech de Google que estará escuchando en todo momento.
 
 ## Desarrolladores
 Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo puedes cambiar desde la variable en **MainActivity.java > ACTIVATION_KEYWORD** (default: 'ejecutar comando').
