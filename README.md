@@ -1,5 +1,3 @@
-![picture alt](https://www.giztab.com/wp-content/uploads/2018/07/robot-enfermeros.png "Asistente de voz")
-- - -
 # Projecto ASISTENTE DE VOZ :speak_no_evil:
 Asistente de voz con la opción de reconocer una palabra. Esto lo hace mediante el speech de Google que estará escuchando en todo momento.
 
@@ -15,3 +13,5 @@ Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo pue
 * SQLite
 * WebService (proximamente)
 
+- - -
+<center>![picture alt](https://www.giztab.com/wp-content/uploads/2018/07/robot-enfermeros.png "Asistente de voz")</center>
