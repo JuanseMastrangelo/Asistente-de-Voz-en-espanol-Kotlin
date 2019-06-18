@@ -1,3 +1,10 @@
+
+<p align="center">
+  <img src="https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg">
+</p>
+
+- - -
+
 # Projecto ASISTENTE DE VOZ :speak_no_evil:
 Asistente de voz con la opción de reconocer una palabra. Esto lo hace mediante el speech de Google que estará escuchando en todo momento.
 
@@ -13,6 +20,4 @@ Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo pue
 * SQLite
 * WebService (proximamente)
 
-- - -
-<center><img src="https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg" style="width:100%;" /></center>
 
