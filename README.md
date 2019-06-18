@@ -14,5 +14,5 @@ Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo pue
 * WebService (proximamente)
 
 - - -
-![picture alt](https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg "Asistente de voz")
+<center><img src="https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg" style="width:100%;" /></center>
 
