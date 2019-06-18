@@ -1,11 +1,10 @@
-version [Versión] path [+]
+
+# Projecto :speak_no_evil:
+
 ![alt text](https://ui-ex.com/transparent450_/robot-vector-face.png)
 
 - - - -
 
-# Projecto 
-:smile:
-
-++ Android Studio (Kotlin)
-++ SQLite
+* Android Studio (**Kotlin**)
+* SQLite
 
