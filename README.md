@@ -1,10 +1,10 @@
 version [Versión] path [+]
 ![alt text](https://ui-ex.com/transparent450_/robot-vector-face.png)
 
-Markup :  - - - -
+- - - -
 
 # Projecto 
-Markup : Code appears between colons :EMOJICODE:
+:smile:
 
 ++ Android Studio (Kotlin)
 ++ SQLite
