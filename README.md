@@ -12,7 +12,7 @@ Podes llamar al asistente con la palabra **ejecutar comando** aunque esto lo pue
 
 ## Comandos Disponibles
 Ejecuta comando diciendo: '**ejecutar comando**', luego dí:
-* **reproducir** <cancion> **del artista** <artista> : Reproduce una cancion de Spotify (Ver solapa Tutorial)
+* **reproducir** <<cancion>> **del artista** <<artista>> : Reproduce una cancion de Spotify (Ver solapa Tutorial)
 * **canciones** : Mostrará las listas de canciones agregadas y que puedes decirle al asistente
 
 
