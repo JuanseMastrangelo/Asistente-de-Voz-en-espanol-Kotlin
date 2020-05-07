@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://img.shields.io/github/forks/JuanseMastrangelo/Asistente-de-Voz-en-espanol-Kotlin"><br><br>
   <img src="https://cdn.canstarblue.co.nz/wp-content/uploads/banner-with-robot-coffee.jpg">
 </p>
 
